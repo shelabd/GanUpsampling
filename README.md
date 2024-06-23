@@ -49,41 +49,31 @@ Dr. Maha Saadeh
 
 **Contents** 
 
-[Abstract............................... 3 ](#_Toc46642)
-
-[Introduction......................... 4 ](#_Toc46643)
-
-[Terminology used............ 5 ](#_Toc46644)
-
- 
-
-Problem Statement .......................................................................................................... 4 
-
-Objectives ................................................................................................................... 6 
-
-Literature Review ................................................................................................................ 6 
-
-Introduction ................................................................................................................. 6 
-
-Methodology ................................................................................................................... 7 
-
-Research Papers .............................................................................................................. 7 
-
-Methods ............................................................................................................................. 10 
-
-Introduction ................................................................................................................... 10 
-
-Data ............................................................................................................................... 12 
-
-Proposed Work ................................................................... **Error! Bookmark not defined.** Intended contribution of the work .................................. **Error! Bookmark not defined.** 
-
-Benefits of the proposed work ...................................................................................... 33 Procedures and activities of the proposed work ........................................................... 33 Evaluation of the project ................................................ **Error! Bookmark not defined.** Resources needed .......................................................................................................... 34 Access to participants and clients .................................. **Error! Bookmark not defined.** 
-
-Ethical Aspects ............................................................... **Error! Bookmark not defined.** Work plan and schedule ..................................................... **Error! Bookmark not defined.** 
-
-Conclusion ........................................................................................................................ 34 
-
-Discussions ................................................................................................................... 34 Bibliography (Anthimopoulos, 2013) ............................................................................... 36 Appendixes ........................................................................ **Error! Bookmark not defined.** 
+Abstract
+Introduction
+Terminology used
+Problem Statement
+Objectives 
+Literature Review 
+Introduction 
+Methodology
+Research Papers
+Methods
+Introduction
+Data
+Proposed Work
+Intended contribution of the work .
+Benefits of the proposed work 
+Procedures and activities of the proposed work 
+Evaluation of the project 
+Resources needed
+Access to participants and clients 
+Ethical Aspects 
+Work plan and schedule 
+Conclusion 
+Discussions
+Bibliography 
+Appendixes 
 
  
 
