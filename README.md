@@ -260,7 +260,7 @@ In (Radford, et al., 2016), the authors implement and discuss the use of DCGAN m
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg) 
+![img](images/clip_image004.jpg) 
 
 *Fig 2 - GAN Best Practice 1* 
 
@@ -322,19 +322,19 @@ The GAN framework definition is outlined as follows. The generator:
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg) 
+![img](images/clip_image005.jpg) 
 
 Where the random noise Z is employed by the generator to produce data that falls in the data plane X. The generator attempts to capture the real; data distribution to produce synthetic representative data. Adversarial to the generator, the discriminator, denoted: 
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg) 
+![img](images/clip_image006.jpg) 
 
 Where D is the discriminator that aims to classify if the data belongs to the original dataset or has been synthesized by the generator. Fig 1. Illustrates the end-to-end process of a basic or vanilla GANs model. 
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image007.jpg) *Fig 1 - GAN Model 2* 
+![img](images/clip_image007.jpg) *Fig 1 - GAN Model 2* 
 
 The cGAN model would follow a very similar training process. However, an additional data plane would be added to the training data in the form of conditions. This would enable the GAN model to expand the training scenarios of each image by also adding more context to the image, such as the angle the picture was captured or the lighting etc. 
 
@@ -436,7 +436,7 @@ The input to the network is a 244 x 244 x 3 image. This is an RBG image with a l
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg) 
+![img](images/clip_image008.jpg) 
 
 *Fig 3 - VGG16 1 (Simonyan & Zisserman, 2014)* 
 
@@ -640,7 +640,7 @@ The formula for the categorical cross entropy:
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif) 
+![img](images/clip_image010.gif) 
 
 #### Categorical Cross Entropy 
 
@@ -799,7 +799,7 @@ From the above output of the training, we can see a healthy trend between the tr
 
 A plot of the training and validation losses can be examined for analysis below: 
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg) *Fig 4 - Loss Plot 1* 
+![img](images/clip_image011.jpg) *Fig 4 - Loss Plot 1* 
 
 #### Training & Validation Loss 
 
@@ -811,7 +811,7 @@ A plot of the training and validation losses can be examined for analysis below:
 
 The final accuracy results based on the training script above shows a good baseline to benchmark the output of future training after the oversampling techniques have been applied to the dataset: 
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image013.jpg) 
+![img](images/clip_image013.jpg) 
 
  
 
@@ -843,7 +843,7 @@ The data set for this version of GAN has been scaled down to 64 x 64 x 3 images.
 
  
 
-  Train  1000   ![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif)                                                                                                                                                                                                                                                                                                                                                                                                                                                              800  600  400  200  0        Chicken_wings      Steak         Salmon       Apple_Pie  
+  Train  1000   ![img](images/clip_image014.gif)                                                                                                                                                                                                                                                                                                                                                                                                                                                              800  600  400  200  0        Chicken_wings      Steak         Salmon       Apple_Pie  
 
 *Fig 6 - Class Count 1* 
 
@@ -867,7 +867,7 @@ The discriminator consists of a basic architecture that belong to a typical conv
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg) *Fig 7 - Discriminator Architecture 1* 
+![img](images/clip_image016.jpg) *Fig 7 - Discriminator Architecture 1* 
 
 The discriminator consist of 3 convolutional layers that transform the dimensions of the image tensors into deeper layers. The starting layer transforms the RBG channel from 3 into 64, this then passes through a Leaky ReLU activation function as per the best practices outlines in (Ian J. Goodfellow, 2014). The second layer onwards follow the same process but with a batch normalization function in order to localize the normalization to the specific batch of images for each forward pass. Ultimately, the final output transforms the deep channels from 512 channels into 1. This final layer passes through a sigmoid function that determines if an image is real on synthetic. 
 
@@ -877,7 +877,7 @@ The selected Loss function of this discriminator is a Binary Cross Entropy (BCEL
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image018.jpg) 
+![img](images/clip_image018.jpg) 
 
  
 
@@ -901,7 +901,7 @@ The second core component of the GAN architecture is that of the generator netwo
 
 First, we display the structure of our generator: 
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image020.jpg) 
+![img](images/clip_image020.jpg) 
 
 *Fig 8 - Generator Architecture 1* 
 
@@ -923,7 +923,7 @@ The training process of the deep convolutional GAN model as explained in the int
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image021.jpg) *Fig 1 - GAN Model 3* 
+![img](images/clip_image021.jpg) *Fig 1 - GAN Model 3* 
 
 The generator will read in random noise create by the latent vector and following an OR gate, will feed its output into the discriminator model. The discriminator will determine whether the data is real or fake and the output loss will be fed into the optimizer function that will feedback into the generator for adjustments. The data loader created as part of the data processing will be used to feed in the real samples and the model will be allowed to run for 40 epochs. 
 
@@ -935,7 +935,7 @@ Below is a sample of the real data from the food 101 dataset that was prepared:
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image023.jpg) 
+![img](images/clip_image023.jpg) 
 
 *Fig 9 - Food Training Images 1* 
 
@@ -943,7 +943,7 @@ After running for several epochs, the generated images below display the output 
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image025.jpg) 
+![img](images/clip_image025.jpg) 
 
 *Fig 10 - Generated Images 1*
 
@@ -955,7 +955,7 @@ A second approach to training the DCGAN was by reducing the overall dataset to j
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image027.jpg) 
+![img](images/clip_image027.jpg) 
 
 *Fig 11 - Class Generated Images 1* 
 
@@ -965,7 +965,7 @@ From the images alone we can see an impressive display of images that truly capt
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image029.jpg) 
+![img](images/clip_image029.jpg) 
 
 *Fig 12 - Class Generated Images 2* 
 
@@ -985,7 +985,7 @@ As previously proposed in the data section, the classes were synthetically imbal
 
 The Steak group was selected and out of 800 training images, 400 were dropped. 
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image030.gif)
+![img](images/clip_image030.gif)
 
 *Fig 13 - Class Count 2* 
 
@@ -997,7 +997,7 @@ The baseline CNN was retrained with the imbalanced dataset, and the losses plot 
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image032.jpg) 
+![img](images/clip_image032.jpg) 
 
 *Fig 14 - Loss Plot 2* 
 
@@ -1005,7 +1005,7 @@ The baseline CNN was retrained with the imbalanced dataset, and the losses plot 
 
 From the above loss plot, we can see that the validation loss is not as smooth as it was when the classes were balanced with real images. Furthermore, we can see a divergence occurring towards the end epochs, which shows that the model was becoming unstable. This can be further illustrated with the accuracies captured for the classes: 
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image034.jpg) 
+![img](images/clip_image034.jpg) 
 
 *Fig 15 - Accuracy Table 2* 
 
@@ -1019,11 +1019,11 @@ Due to the imbalance of the dataset, the steak class has dropped significantly i
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image036.jpg) 
+![img](images/clip_image036.jpg) 
 
 *Fig 16 - Loss Plot 3* 
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image038.jpg) 
+![img](images/clip_image038.jpg) 
 
 *Fig 17 - Accuracy Table 3* 
 
@@ -1041,7 +1041,7 @@ The basic concept of a CGAN can be explained with the below illustration from (G
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image040.jpg) 
+![img](images/clip_image040.jpg) 
 
 *Fig 18 - cGAN Model Architecture 1* 
 
@@ -1063,7 +1063,7 @@ The output of the CGAN model gives distinctly separated classes in the images ca
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image043.gif)
+![img](images/clip_image043.gif)
 
 *Fig 19 - cGAN Output 1* 
 
@@ -1079,7 +1079,7 @@ The Wasserstein GAN was introduced as an extension of the traditional Deep
 
 Convolutional GAN. The WGAN moves away from the standard discriminator and instead, adds a critic to the output of the generated images. This reduces the need for hyper parameter tuning and in theory should produce more stable training and betterquality images. The loss function produced from the WGAN has a direct correlation to the quality of the images produced by the generator. 
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image045.jpg) 
+![img](images/clip_image045.jpg) 
 
 *Fig- 20 WGAN 1* 
 
@@ -1097,7 +1097,7 @@ The illustration above, taken from (Huiu, 2018), shows the main difference betwe
 
 A weight clipping value of 10 was added and the output is illustrated below: 
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image047.jpg) 
+![img](images/clip_image047.jpg) 
 
 *Fig - 21 WGAN output 1* 
 
@@ -1119,7 +1119,7 @@ To improve on the above WGAN architecture, the WGAN-GP model introduced in (Isha
 
 A gradient penalty helper function was created and introduced into the existing architecture of the WGAN and replaced the clipping of the weights as outlined in the (Ishaan Gulrajani, et al., 2017) paper and the output after 500 epochs can be illustrated below: 
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image049.jpg) 
+![img](images/clip_image049.jpg) 
 
 *Fig 22 – Generated Class Images WGAN-GP 1* 
 
@@ -1133,13 +1133,13 @@ The same oversampling process used in the DCGAN section is used with the generat
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image051.jpg) 
+![img](images/clip_image051.jpg) 
 
 *Fig 23- WGAN-GP 1*
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image053.jpg) 
+![img](images/clip_image053.jpg) 
 
 *Fig 24 WGAN-GP Oversampling results 1*
 
