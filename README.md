@@ -127,7 +127,7 @@ Over the course of the study of Data Science and Machine learning, discriminativ
 
  
 
-![img](file:///C:/Users/shelabd/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg) *Fig 1 - GAN Model 1* 
+![img](images/clip_image002.jpg) *Fig 1 - GAN Model 1* 
 
 The GAN model typically works by taking in real samples, injects noise along the distribution of the images and creates a new image. This synthetic image is fed into a discriminator that can differentiate between the real and synthetic images. The results are then backpropagated to the generator for fine tuning. 
 
